@@ -10,14 +10,15 @@
     "electron": "^1.4.5",
     "electron-installer-dmg": "^0.1.2",
     "electron-packager": "^8.1.0",
+    "electron-squirrel-startup": "^1.0.0",
     "electron-winstaller": "^2.4.1"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/barisvelioglu/electronexperiment.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barisvelioglu/electronexperiment.git"
   },
   "scripts": {
-    "start" : "node ./bin/www",
+    "start": "node ./bin/www",
     "package-mac": "electron-packager . --overwrite --asar=true --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
     "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Tutorial App\"",
     "package-linux": "electron-packager . --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds",
@@ -30,6 +31,7 @@
     "debug": "~2.2.0",
     "express": "~4.14.0",
     "jade": "~1.11.0",
+    "level": "^1.5.0",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0"
   }
