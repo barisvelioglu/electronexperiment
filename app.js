@@ -19,7 +19,7 @@ var mainWindow;
 function createWindow () {
 
 	// Create the browser window.
-	mainWindow = new browserWindow({width: 1024, height: 800, titleBarStyle: 'hidden-inset'});
+	mainWindow = new browserWindow({width: 1440, height: 900, titleBarStyle: 'hidden-inset'});
 	mainWindow.setMenu(null);
 
 	var express = require('express');
